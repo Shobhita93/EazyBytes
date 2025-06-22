@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from '../axiosConfig';
+import './Contact.css';  // We'll create this file next
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -28,6 +29,10 @@ const Contact = () => {
 
   return (
     <section className="contact">
+      <div className="contact-header">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to work together? Drop me a message!</p>
+      </div>
       <h2>Contact Me</h2>
       {submitted ? (
         <p className="success">Thank you! I’ll get back to you soon.</p>
