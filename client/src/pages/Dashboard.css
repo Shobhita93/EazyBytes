@@ -1,0 +1,22 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-form input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.project-list {
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
