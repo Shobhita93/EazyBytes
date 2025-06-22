@@ -14,11 +14,10 @@ const Contact = () => {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/projects', form); // Make sure your backend handles this route
+      await axios.post('http://localhost:5000/api/contact', form);
       setSubmitted(true);
       setForm({ name: '', email: '', message: '' });
       setError('');
